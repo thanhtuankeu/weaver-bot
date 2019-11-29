@@ -48,7 +48,7 @@
     "angular2-toaster": "^7.0.0",
     "bootstrap": "^4.3.1",
     "chart.js": "^2.8.0",
-    "core-js": "^2.6.9",
+    "core-js": "^3",
     "date-fns": "^1.30.1",
     "flag-icon-css": "^3.3.0",
     "font-awesome": "^4.7.0",
