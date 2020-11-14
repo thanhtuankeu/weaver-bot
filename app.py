@@ -5,7 +5,7 @@ import os
 
 app = Flask(__name__)
 app.config['JSON_SORT_KEYS'] = False
-portDD = int(os.environ.get('PORT', 17995))
+portDD = int(os.environ.get("PORT", 17995))
 
 @app.route('/')
 def index():
@@ -15,4 +15,4 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=portDD)
+    app.run(host ='0.0.0.0',debug=True, port=portDD)
