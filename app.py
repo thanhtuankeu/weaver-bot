@@ -1,10 +1,11 @@
 import oyaml as yaml
 from flask import Flask
 from flask import render_template
+import os
 
 app = Flask(__name__)
 app.config['JSON_SORT_KEYS'] = False
-
+portDD = int(os.environ.get('PORT', 17995))
 
 @app.route('/')
 def index():
@@ -14,4 +15,4 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(debug=True, port=portDD)
